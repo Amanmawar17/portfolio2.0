@@ -12,7 +12,7 @@ function Navbar() {
         <div className="rounded-xl flex justify-between items-center w-full">
           <div className="flex justify-start w-full items-baseline">
             <h1 className="font-semibold font-Noto text-3xl">Aman Mawar</h1>{" "}
-            <div className="w-3 h-3 bg-extra1 mx-2"></div>{" "}
+            <div className="w-3 h-3 bg-primary mx-2"></div>{" "}
             <span className="font-Rale font-medium">Full Stack Developer</span>
           </div>
           <ul className="flex w-full justify-end md:text-lg text-sm items-center font-normal my-1">

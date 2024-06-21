@@ -45,11 +45,12 @@ function Email() {
   return (
     <form ref={form} onSubmit={sendEmail} className="flex flex-col min-w-96">
       <label>Name</label>
-      <input type="text" name="user_name" placeholder="name" className="p-4 mb-2 w-full text-black border-[#9294a0] dark:border-primary border-solid border-2 rounded-md " />
+      <input type="text" name="user_name" placeholder="name" className="p-4 mb-2 w-full text-black border-[#9294a0] 
+      dark:border-extra2 border-solid border-2 rounded-sm " />
       <label>Email</label>
       <input
         type="email"
-        className="p-4 mb-2 w-full text-black border-[#9294a0] dark:border-primary border-solid border-2 rounded-md"
+        className="p-4 mb-2 w-full text-black border-[#9294a0] dark:border-extra2 border-solid border-2 rounded-sm"
         placeholder="email@gmail.com"
         {...register("email", {
           required: "Field cannot be empty",
@@ -61,12 +62,14 @@ function Email() {
         aria-invalid={errors.email ? "true" : "false"}
       />
       <label>Message</label>
-      <textarea name="message" rows="6" placeholder="message" className="p-4 mb-2 w-full text-black border-[#9294a0] dark:border-primary border-solid border-2 rounded-md" />
+      <textarea name="message" rows="6" placeholder="message" className="p-4 mb-2 w-full text-black border-[#9294a0] 
+      dark:border-extra2 border-solid border-2 rounded-sm" />
       <button
         type="submit"
         value="Send"
         onClick={handleSubmit(onSubmit)}
-        className="w-40 m-auto border-2 text-lg font-medium border-secondary bg-accentwhite hover:bg-secondary text-secondary hover:text-accentwhite dark:border-primary dark:text-primary dark:hover:text-accentwhite dark:hover:bg-primary p-3 my-2"
+        className="w-40 m-auto border-2 rounded-sm text-lg font-medium border-extra2 bg-accentwhite hover:bg-extra2 
+        text-extra2 hover:text-accentwhite p-3 my-2"
       >Send it!</button>
     </form>
   );

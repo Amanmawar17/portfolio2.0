@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
 import useDarkMode from "../../hooks/useDarkMode";
-// import { RiSunLine } from "react-icons/ri";
-// import { BsMoonStars } from "react-icons/bs";
 
 function DarkMode() {
     const [colorTheme, setTheme] = useDarkMode();
@@ -14,10 +12,10 @@ function DarkMode() {
         setDarkMode(checked);
     };
   return (
-    <button className="outline outline-2 outline-primary p-2 rounded-full">
+    <button className="outline outline-2 outline-extra2 dark:outline-accentwhite  p-2 rounded-full">
        <DarkModeSwitch 
-                moonColor="#00a6fb"
-                sunColor="#00a6fb"
+                moonColor="#FCFBFC"
+                sunColor="#ff9f1c"
                 checked={darkMode}
                 onChange={toggleDarkMode}
                 size={18}
