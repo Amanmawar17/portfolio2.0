@@ -2,6 +2,7 @@ import { NavLink, Outlet } from "react-router-dom";
 import { useState } from "react";
 import Footer from "../footer/Footer";
 import DarkMode from "./DarkMode";
+import {navdata} from "../../data/data"
 
 function Navbar() {
   const [active, setActive] = useState("");
@@ -16,28 +17,24 @@ function Navbar() {
             <span className="font-Rale font-medium">Full Stack Developer</span>
           </div>
           <ul className="flex w-full justify-end md:text-lg text-sm items-center font-normal my-1">
-            <li className={`p-3 hover:text-primary hover:border-b-primary hover:border-b-2 
-            ${ active === "" ? "border-b-2 border-b-primary text-primary " : ""} `} onClick={() => setActive("")}>
-              <NavLink to="" >About</NavLink>
+            {navdata.map((item,index) => (
+              <li key={index} id={item.id}
+              className={`p-3 hover:text-primary hover:border-b-primary hover:border-b-2 
+            ${
+              active === `${item.pathname}` ? "border-b-2 border-b-primary text-primary " : ""
+            } `}
+              onClick={() => setActive(`${item.pathname}`)}
+            >
+              <NavLink to={item.pathname}>{item.links}</NavLink>
             </li>
-            <li className={`p-3 hover:text-secondary hover:border-b-secondary hover:border-b-2 
-            ${ active === "resume" ? "text-secondary border-b-secondary border-b-2" : ""
-                  }`} onClick={() => setActive("resume")} >
-            <NavLink to="/resume" >Resume</NavLink>
-            </li>
-            <li className={`p-3 hover:text-extra1 hover:border-b-extra1 hover:border-b-2 ${ active === "project" ? "border-b-2 border-b-extra1 text-extra1 " : ""} `} onClick={() => setActive("project")}>
-            <NavLink to="/project">Project</NavLink>
-            </li>
-            <li className={`p-3 hover:text-extra2 hover:border-b-extra2 hover:border-b-2 ${ active === "contact" ? "border-b-2 border-b-extra2 text-extra2 " : ""} `} onClick={() => setActive("contact")}>
-            <NavLink to="/contact">Contact</NavLink>
-            </li>
+            ))}
             <div className="p-2">
-              <DarkMode/>
+              <DarkMode />
             </div>
           </ul>
         </div>
       </nav>
-      <Outlet/>
+      <Outlet />
       <Footer />
     </>
   );

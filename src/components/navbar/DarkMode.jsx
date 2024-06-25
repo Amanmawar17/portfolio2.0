@@ -12,10 +12,10 @@ function DarkMode() {
         setDarkMode(checked);
     };
   return (
-    <button className="outline outline-2 outline-extra2 dark:outline-accentwhite  p-2 rounded-full">
+    <button className="outline outline-2 outline-primary dark:outline-accentwhite  p-2 rounded-full">
        <DarkModeSwitch 
                 moonColor="#FCFBFC"
-                sunColor="#ff9f1c"
+                sunColor="#00a6fb"
                 checked={darkMode}
                 onChange={toggleDarkMode}
                 size={18}

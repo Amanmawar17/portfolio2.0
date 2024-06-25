@@ -4,8 +4,9 @@ import TypeIt from "typeit-react";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import TechnTools from "./techntools/TechnTools";
-import { NavLink } from "react-router-dom";
+import TechnTools from "../../components/techntools/TechnTools";
+import ButtonRoute from "../../components/buttonroute/ButtonRoute";
+
 
 function Home() {
   return (
@@ -39,26 +40,11 @@ function Home() {
                 />
               </span>
             </h4>
-            <p className="text-base py-3 font-Rale font-light">
+            <p className="text-base py-3 font-Rale font-medium">
               I`m an aspiring Full-Stack developer based in India. I am excited
               about making Saas and Open Source Projects.
             </p>
-            <div className="flex justify-start font-semibold py-3">
-              <NavLink to="/resume" className="">
-                <button className="outline outline-2 outline-primary rounded-sm bg-primary hover:bg-accentwhite text-base10 
-                dark:hover:bg-accentblack hover:text-primary p-2">
-                  Resume
-                </button>
-              </NavLink>
-              <NavLink to="/project" className="ml-4 ease-in">
-                <button
-                  className="outline-2 outline outline-secondary rounded-sm text-secondary hover:bg-secondary 
-                hover:text-base10 p-2"
-                >
-                  Projects
-                </button>
-              </NavLink>
-            </div>
+            <ButtonRoute/>
           </div>
           <div id="hero" className="flex justify-center flex-col items-center">
             <Tilt
