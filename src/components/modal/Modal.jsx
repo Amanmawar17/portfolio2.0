@@ -20,38 +20,48 @@ export default function Modal() {
       <div
         className={`w-full bg-white rounded-t-lg shadow-lg transition-all transform ${
           isOpen ? "translate-y-0" : "translate-y-full"
-        } transition-transform duration-300 rounded-2xl max-w-5xl bg-accentwhite`}
+        } transition-transform duration-300 rounded-t-2xl max-w-5xl bg-accentwhite`}
         style={{ height: "88%" }}
       >
-        <div className="p-4">
+        <div className="grid px-4 pt-6">
           <IoCloseOutline
-            className="text-black hover:text-accentblack w-8 h-8 cursor-pointer"
+            className="text-black hover:text-accentblack w-10 h-10 cursor-pointer place-self-end"
             onClick={closeModal}
           />
-          <div className="mt-4 flex justify-evenly p-2 dark:text-black">
-            <div className="p-2 w-1/2">
-              <div>
-                <img src={data.img} alt={data.title} className="w-11/12 " />
-              </div>
-              <div className="flex">
-                <h2 className="text-3xl font-semibold">{data.title}</h2>
-                <ul className="flex items-center">
+          <div className="pt-4 grid grid-flow-col gap-10 dark:text-black p-4">
+            <div className="max-w-lg">
+              <img src={data.img} alt={data.title} className="shadow-xl" />
+              <div className="flex justify-between items-center my-6 max-w-md">
+                <h2 className="text-start text-3xl font-semibold">{data.title}</h2>
+                <ul className="flex justify-end items-center">
                   <li>
                     <a href={data.github} target="_blank" rel="noreferrer">
-                      <FaGithub className="text-black mx-3" />
+                      <FaGithub className="text-black h-6 w-6 mx-3" />
                     </a>
                   </li>
                   <li className="">
                     <a href={data.live} target="_blank" rel="noreferrer">
-                      <BsGlobe className="text-black" />
+                      <BsGlobe className="text-black h-6 w-6" />
                     </a>
                   </li>
                 </ul>
               </div>
               {data.tech}
             </div>
-            <div className="w-1/2 min-h-[80vh] overflow-y-scroll">
-              <p className="mt-2 text-gray-600">{data.desc}</p>
+            <div className="overflow-y-auto max-h-[74vh]">
+              <ul>
+              {Array.isArray(data.desc) ? (
+              data.desc.map((line, index) => (
+                <p key={index} className="mt-2">
+                  {line}
+                </p>
+              ))
+            ) : (
+              <p className="mt-2">
+                {data.desc}
+              </p>
+            )}
+        </ul>
             </div>
           </div>
         </div>
@@ -68,7 +78,7 @@ Modal.propTypes = {
     github: PropTypes.string,
     live: PropTypes.string,
     tech: PropTypes.string,
-    desc: PropTypes.string,
+    desc: PropTypes.arrayOf(PropTypes.string).isRequired,
     time: PropTypes.string,
     bestline: PropTypes.string,
     topic: PropTypes.string,

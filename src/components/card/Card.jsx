@@ -43,12 +43,12 @@ export default function Card({ data }) {
                   </li>
                 </ul>
               )}
+            </div>
               {data.time && (
-                <p className="text-sm dark:text-accentwhite text-black mx-3">
+                <p className="text-sm dark:text-accentwhite text-black mx-5">
                   {data.time}
                 </p>
               )}
-            </div>
             <div className="mx-5">
               {data.tech && (
                 <h3 className="text-sm font-medium text-black dark:text-accentwhite">
@@ -60,9 +60,11 @@ export default function Card({ data }) {
                   {data.topic}
                 </p>
               )}
-              <p className="dark:text-accentwhite text-black text-base mt-2 line-clamp-6">
-                {data.desc}
-              </p>
+              {data.desc.length > 0 && (
+                <p className="dark:text-accentwhite text-black text-base mt-2 line-clamp-5">
+                  {data.desc[0]}
+                </p>
+              )}
             </div>
           </div>
         </div>
@@ -80,7 +82,10 @@ Card.propTypes = {
     github: PropTypes.string,
     live: PropTypes.string,
     tech: PropTypes.string,
-    desc: PropTypes.string,
+    desc: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.arrayOf(PropTypes.string)
+    ]).isRequired,
     time: PropTypes.string,
     bestline: PropTypes.string,
   }).isRequired,
