@@ -11,9 +11,9 @@ import ButtonRoute from "../../components/buttonroute/ButtonRoute";
 function Home() {
   return (
     <>
-      <section id="home" className="pt-10 md:h-full lg:h-[81vh]">
+      <section id="home" className="pt-10 md:h-full lg:min-h-[81vh]">
         <div className="flex justify-evenly flex-col-reverse lg:flex-row items-center font-mono">
-          <div className="flex-col max-w-lg lg:w-1/2">
+          <div className="flex-col mt-4 p-4 max-w-sm md:max-w-lg lg:w-1/2">
             <h1 className="text-5xl py-3">Heyy! There, 🫰</h1>
             <h4
               className="tw text-2xl py-2 font-semibold font-Noto"
@@ -81,8 +81,8 @@ function Home() {
             </Tilt>
           </div>
         </div>
-      </section>
       <TechnTools />
+      </section>
     </>
   );
 }

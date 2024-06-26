@@ -9,7 +9,7 @@ export default function Card({ data }) {
   const { openModal } = useContext(ModalContext);
 
   return (
-    <div className="m-2 cursor-pointer" onClick={() => openModal(data)}>
+    <div className="lg:m-2 cursor-pointer" onClick={() => openModal(data)}>
       <Tilt
         scale={1.1}
         transitionEasing="0.9"
@@ -18,7 +18,7 @@ export default function Card({ data }) {
         tiltMaxAngleX={8}
         tiltMaxAngleY={10}
       >
-        <div className="flex flex-col justify-evenly text-accentwhite dark:text-extra1 max-w-xs rounded-sm shadow-2xl dark:shadow-sm dark:shadow-accentwhite">
+        <div className="flex flex-col justify-evenly text-accentwhite dark:text-extra1 w-72 lg:max-w-xs rounded-sm shadow-2xl dark:shadow-sm dark:shadow-accentwhite">
           <img
             className="w-full h-48"
             src={data.img}

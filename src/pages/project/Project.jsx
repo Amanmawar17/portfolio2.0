@@ -11,7 +11,7 @@ function Project() {
           <h1 className="text-5xl text-primary dark:text-accentwhite font-semibold py-2">
             Projects
           </h1>
-          <section className="my-10 px-10">
+          <section className="my-10 lg:px-10">
             <div className="grid grid-cols-1 gap-14 grid-flow-row md:grid-cols-2 lg:grid-cols-3">
               {project.map((item) => (
                 <Card key={item.id} data={item} />

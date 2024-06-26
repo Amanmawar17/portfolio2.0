@@ -5,8 +5,8 @@ import DateTime from "./DateTime";
 
 function Footer() {
   return (
-    <section className="flex flex-col justify-around items-center p-2 border-t-[1px] md:flex-row h-[7vh] font-semibold">
-    <div className="ml-6 font-semibold">
+    <footer className="flex lg:flex-row flex-col justify-around items-center p-2 border-t-[1px] md:flex-row lg:h-[7vh] font-semibold">
+    <div className="lg:ml-6 font-semibold">
         <h1>No Copyright issue <span className="text-secondary"> :)</span></h1>
     </div>
     <div className="my-4 md:my-0">
@@ -20,7 +20,7 @@ function Footer() {
             <li className="mx-2"><a href="https://twitter.com/aman_mawar" target="blank"><FaXTwitter className="h-6 w-6 hover:text-primary"/></a></li>
         </ul>   
     </div>
-</section>
+</footer>
 
   )
 }

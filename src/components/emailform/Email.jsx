@@ -43,7 +43,7 @@ function Email() {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail} className="flex flex-col min-w-96">
+    <form ref={form} onSubmit={sendEmail} className="flex flex-col min-w-80 lg:min-w-96">
       <label>Name</label>
       <input type="text" name="user_name" placeholder="name" className="p-4 mb-2 w-full text-black border-[#9294a0] 
       dark:border-extra2 border-solid border-2 rounded-sm " />
@@ -68,7 +68,7 @@ function Email() {
         type="submit"
         value="Send"
         onClick={handleSubmit(onSubmit)}
-        className="w-40 m-auto border-2 rounded-sm text-lg font-medium border-extra2 bg-accentwhite hover:bg-extra2 
+        className="w-32 lg:w-40 m-auto border-2 rounded-sm text-lg font-medium border-extra2 bg-accentwhite hover:bg-extra2 
         text-extra2 hover:text-accentwhite p-3 my-2"
       >Send it!</button>
     </form>
