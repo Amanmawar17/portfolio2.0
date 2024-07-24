@@ -27,12 +27,12 @@ export default function RootLayout({ children }) {
         />
         <meta
           name='keywords'
-          content='Aman Mawar, amanmawar, Amanmawar'
+          content='Aman Mawar, amanmawar, Amanmawar, aman mawar'
         />
         <meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
         <meta name='author' content='Aman Mawar' />
         <meta property='og:type' content='website' />
-        <meta property='og:url' content='https://aman-mawar.netlify.app' />
+        <meta property='og:url' content='https://aman-mawar.vercel.app' />
         <meta property='og:title' content='Aman Mawar' />
         <meta
           property='og:description'
@@ -40,10 +40,10 @@ export default function RootLayout({ children }) {
         />
         <meta
           property='og:image'
-          content='https://aman-mawar.netlify.app/banner.png'
+          content='https://aman-mawar.vercel.app/banner.png'
         />
         <meta property='twitter:card' content='summary_large_image' />
-        <meta property='twitter:url' content='https://aman-mawar.netlify.app' />
+        <meta property='twitter:url' content='https://aman-mawar.vercel.app' />
         <meta property='twitter:title' content='Aman Mawar' />
         <meta
           property='twitter:description'
@@ -51,7 +51,7 @@ export default function RootLayout({ children }) {
         />
         <meta
           property='twitter:image'
-          content='https://aman-mawar.netlify.app/banner.png'
+          content='https://aman-mawar.vercel.app/banner.png'
         />
         <link rel='icon' href='/logo.png' />
       </head>
@@ -65,8 +65,8 @@ export default function RootLayout({ children }) {
           <Suspense fallback={<Loading />}>
           <Navbar />
           {children}
-          </Suspense>
           <Footer />
+          </Suspense>
         </ThemeProvider>
       </body>
     </html>
