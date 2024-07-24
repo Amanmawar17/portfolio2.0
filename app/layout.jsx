@@ -62,8 +62,8 @@ export default function RootLayout({ children }) {
           enableSystem
           disableTransitionOnChange
         >
-          <Navbar />
           <Suspense fallback={<Loading />}>
+          <Navbar />
           {children}
           </Suspense>
           <Footer />
