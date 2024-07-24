@@ -61,8 +61,8 @@ function Home() {
                   className="h-80 rounded-full w-96"
                   src={hero}
                   alt="Photo!"
-                  width="auto"
-                  height="auto"
+                  width={400}
+                  height={300}
                 />
                 <div className="my-2">
                   <h1 className="mb-2 text-lg font-medium">Aman mawar</h1>

@@ -10,7 +10,7 @@ function Contact() {
       <div className="flex flex-col lg:flex-row justify-evenly items-center py-10 w-full">
         <Email />
         <div>
-          <Image src={contact} alt="contact_svg" className="w-80 lg:h-96" />
+          <Image src={contact} alt="contact_svg" width={400} height={200} />
         </div>
       </div>
     </section>

@@ -2,6 +2,38 @@ import starman from "../../public/starman.png";
 import drawei from "../../public/drawei.png";
 import netflix from "../../public/netflix.png";
 import otto from "../../public/otto.png";
+import {
+  AngularjsOriginal,
+  PythonOriginal,
+  JavascriptOriginal,
+  Html5Original,
+  Css3Original,
+  TypescriptOriginal,
+  GitOriginal,
+  CplusplusOriginal,
+  ReactOriginal,
+  TailwindcssOriginal,
+  VitejsOriginal,
+  NetlifyOriginal,
+  LinuxOriginal,
+  RosOriginal,
+  GazeboOriginal,
+  DockerOriginal,
+  GooglecloudOriginal,
+  FlutterOriginal,
+  DartOriginal,
+  MongodbOriginal,
+  ExpressOriginal,
+  NodejsOriginal,
+  PostmanOriginal,
+  BootstrapOriginal,
+  FigmaOriginal,
+  RaspberrypiOriginal,
+  SupabaseOriginal,
+  ArduinoOriginal,
+  NextjsOriginal,
+  AndroidstudioOriginal
+} from "./index"
 
 export const experience = [
   {
@@ -140,5 +172,128 @@ export const navdata = [
     id: 5,
     links: "Contact",
     pathname: "contact",
+  },
+];
+
+export const IconData = [
+  {
+    icon: PythonOriginal,
+    toolip: "Python",
+  },
+  {
+    icon: Html5Original,
+    toolip: "HTML",
+  },
+  {
+    icon: Css3Original,
+    toolip: "CSS",
+  },
+  {
+    icon: BootstrapOriginal,
+    toolip: "Bootstrap",
+  },
+  {
+    icon: TailwindcssOriginal,
+    toolip: "Tailwind",
+  },
+  {
+    icon: JavascriptOriginal,
+    toolip: "JavaScript",
+  },
+  {
+    icon: TypescriptOriginal,
+    toolip: "TypeScript",
+  },
+  {
+    icon: CplusplusOriginal,
+    toolip: "C++",
+  },
+  {
+    icon: GitOriginal,
+    toolip: "Git",
+  },
+  {
+    icon: ReactOriginal,
+    toolip: "React",
+  },
+  {
+    icon: NextjsOriginal,
+    toolip: "NextJS",
+  },
+  {
+    icon: AngularjsOriginal,
+    toolip: "Angular",
+  },
+  {
+    icon: AndroidstudioOriginal,
+    toolip: "Android Studio",
+  },
+  {
+    icon: FlutterOriginal,
+    toolip: "Flutter",
+  },
+  {
+    icon: DartOriginal,
+    toolip: "Dart",
+  },
+  {
+    icon: VitejsOriginal,
+    toolip: "Vite",
+  },
+  {
+    icon: NetlifyOriginal,
+    toolip: "Netlify",
+  },
+  {
+    icon: GooglecloudOriginal,
+    toolip: "Google Cloud",
+  },
+  {
+    icon: LinuxOriginal,
+    toolip: "Linux",
+  },
+  {
+    icon: ArduinoOriginal,
+    toolip: "Arduino",
+  },
+  {
+    icon: RosOriginal,
+    toolip: "ROS",
+  },
+  {
+    icon: GazeboOriginal,
+    toolip: "Gazebo",
+  },
+  {
+    icon: RaspberrypiOriginal,
+    toolip: "Rasberrypi",
+  },
+  {
+    icon: MongodbOriginal,
+    toolip: "MongoDB",
+  },
+  {
+    icon: ExpressOriginal,
+    toolip: "Express",
+  },
+  {
+    icon: NodejsOriginal,
+    toolip: "Node",
+  },
+  {
+    icon: SupabaseOriginal,
+    toolip: "Supabase",
+  },
+  {
+    icon: DockerOriginal,
+    toolip: "Docker",
+  },
+  {
+    icon: PostmanOriginal,
+    toolip: "Postman",
+  },
+  {
+    icon: FigmaOriginal,
+    toolip: "Figma",
   },
 ];

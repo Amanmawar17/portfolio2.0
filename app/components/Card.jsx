@@ -21,11 +21,11 @@ export default function Card({ data }) {
         tiltMaxAngleX={8}
         tiltMaxAngleY={10}
       >
-        <div className="flex flex-col justify-evenly w-72 lg:max-w-lg rounded-sm bg-card text-card-foreground">
-          <Image
-            className="w-full h-60"
+        <div className="flex flex-col justify-evenly w-72 lg:max-w-lg rounded-sm bg-card text-card-foreground shadow-xl dark:shadow-foreground dark:shadow-sm">
+          <Image className="object-cover"
             src={data.img}
             alt={`${data.title} image`}
+            height={400}
           />
           <div className="py-4">
             <div className="font-bold text-xl mx-5 flex items-center my-2">

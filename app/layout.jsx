@@ -3,6 +3,8 @@ import "./globals.css";
 import { ThemeProvider } from "../app/components/Theme-Provider";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Loading from "./loading"
+import { Suspense } from "react";
 
 const raleway = Raleway({ subsets: ["latin"] });
 const noto = Noto_Sans({ subsets: ["latin"] });
@@ -61,7 +63,9 @@ export default function RootLayout({ children }) {
           disableTransitionOnChange
         >
           <Navbar />
+          <Suspense fallback={<Loading />}>
           {children}
+          </Suspense>
           <Footer />
         </ThemeProvider>
       </body>
