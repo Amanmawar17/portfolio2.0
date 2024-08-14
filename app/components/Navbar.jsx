@@ -21,6 +21,7 @@ function Navbar() {
       <nav className="flex justify-center max-lg:p-4 max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-7xl m-auto backdrop-blur-lg backdrop-filter bg-opacity-30 sticky top-0 z-10">
         <div className="rounded-xl flex flex-col lg:flex-row justify-between items-center relative w-full">
           <div className="flex justify-between lg:justify-start w-full">
+              <Link href="/">
             <div className="flex items-baseline">
               <h1 className="font-semibold font-Noto text-lg md:text-2xl lg:text-3xl">
                 Aman Mawar
@@ -30,6 +31,7 @@ function Navbar() {
                 Full Stack Developer
               </span>
             </div>
+              </Link>
 
             <div className="block lg:hidden">
               {isOpen ? (

@@ -2,6 +2,7 @@ import starman from "../../public/starman.png";
 import drawei from "../../public/drawei.png";
 import netflix from "../../public/netflix.png";
 import otto from "../../public/otto.png";
+import rag from "../../public/ragchatbot.png";
 import {
   AngularjsOriginal,
   PythonOriginal,
@@ -129,6 +130,22 @@ export const project = [
       "Scalability and Performance: Ensured high scalability and performance by deploying on Google Cloud Platform, allowing the application to handle high traffic and deliver content seamlessly.",
       "Advanced Features: Integrated TMDB API for rich media content, and implemented robust authentication methods using GitHub and Google Authentication, enhancing security and user experience.",
       "Email Verification: Employed Resend for email authentication, ensuring secure user registration and verification processes, thereby improving the overall integrity of the platform.",
+    ],
+  },
+  {
+    id: 5,
+    img: rag,
+    title: "Rag Chat Bot",
+    github: "https://github.com/Amanmawar17/rag-chat-bot",
+    live: "https://rag-chat-bot-henna.vercel.app/login",
+    tech: "Next-JS Supabase Vercel-AI-SDK Gemini Tailwind ZOD",
+    desc: [
+      "Developed an advanced RAG chatbot using Next.js, Vercel AI SDK, Google Gemini, and Supabase, delivering real-time responses and user interactions. Styled with Tailwind CSS for a sleek and responsive interface.",
+      "Problem Solved: Created a chatbot capable of retrieving and answering user queries based on a vast range of data, demonstrating the ability to implement cutting-edge AI technologies in a web application.",
+      "Technological Implementation: Leveraged Next.js for fast, server-rendered pages, integrated Google Gemini for AI processing, and used Supabase for efficient user authentication and database management.",
+      "Scalability and Performance: Deployed on Vercel, ensuring high performance, scalability, and seamless integration with the Vercel AI SDK for real-time AI interactions.",
+      "Advanced Features: Implemented secure authentication methods with Supabase, enabling personalized user sessions and stored chat histories, enhancing user experience and security.",
+      "User Experience: Used Tailwind CSS to create a responsive and user-friendly design, ensuring the chatbot interface is intuitive and accessible across all devices."
     ],
   },
 ];

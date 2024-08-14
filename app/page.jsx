@@ -22,20 +22,34 @@ function Home() {
               className="tw text-2xl py-2 font-semibold font-Noto"
               id="animate-text"
             >
-              I`m a{" "}
+              I
               <span className="text-primary">
                 <TypeIt
                   options={{ loop: true }}
                   getBeforeInit={(instance) => {
                     instance
-                      .type(" Software Developer")
+                      .type("`m a Software Developer")
                       .pause(750)
                       .delete(18)
                       .pause(500)
                       .type("Full Stack Developer")
-                      .pause(500)
+                      .pause(750)
                       .delete(20)
-                      .type("Freelancer");
+                      .pause(500)
+                      .type("Freelancer")
+                      .pause(750)
+                      .delete(15)
+                      .pause(500)
+                      .type(" Build Node Packages")
+                      .pause(750)
+                      .delete(14)
+                      .pause(500)
+                      .type("Chat Bots")
+                      .pause(750)
+                      .delete(10)
+                      .pause(500)
+                      .type(" Extensions")
+                      .pause(750);
 
                     // Remember to return it!
                     return instance;
