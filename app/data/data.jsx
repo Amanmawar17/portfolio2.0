@@ -38,6 +38,19 @@ import {
 export const experience = [
   {
     id: 1,
+    position: "Full Stack Developer",
+    duration: "Aug 2024 - present",
+    company: "Femease",
+    companyURL: "www.femease.in",
+    tech: "React, Tailwind, Framer, Redux, Cloudinary, AWS",
+    desc: [
+      "Spearheaded the development and deployment of front-end architecture using React and Tailwind CSS, optimizing performance and user experience through AWS hosting.",
+      "Created dynamic, visually engaging animations with Framer, and integrated Cloudinary for efficient media management, enhancing the UI/UX across web applications.",
+      "Collaborated closely with backend teams to integrate front-end components, leveraging AWS, React, and Tailwind CSS to deliver a seamless, responsive user experience.",
+    ],
+  },
+  {
+    id: 2,
     position: "Web Developer Intern",
     duration: "3 Months",
     company: "MentAR",
