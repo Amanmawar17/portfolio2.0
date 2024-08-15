@@ -42,11 +42,11 @@ function Home() {
                       .pause(500)
                       .type(" Build Node Packages")
                       .pause(750)
-                      .delete(14)
+                      .delete(13)
                       .pause(500)
                       .type("Chat Bots")
                       .pause(750)
-                      .delete(10)
+                      .delete(9)
                       .pause(500)
                       .type(" Extensions")
                       .pause(750);
