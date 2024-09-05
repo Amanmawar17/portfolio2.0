@@ -5,21 +5,27 @@ import Link from "next/link";
 export default function ButtonRoute() {
 
   return (
-    <div className="flex justify-start font-semibold py-3">
+    <div className="flex justify-start font-semibold mt-4 gap-6">
+      <button 
+        className="outline outline-2 outline-primary rounded-radius bg-primary text-background dark:text-foreground hover:bg-background 
+                hover:text-primary px-4 py-2 text-lg">
+
       <Link
         href="/resume"
-        className="outline outline-2 outline-primary rounded-radius bg-primary text-background dark:text-foreground hover:bg-background 
-                hover:text-primary p-2"
-      >
+        >
         Resume
       </Link>
+        </button>
+        <button 
+        className="outline-2 outline outline-secondary rounded-radius text-secondary hover:bg-secondary 
+        hover:text-background dark:hover:text-foreground px-4 py-2 text-lg"
+        >
       <Link
         href="/project"
-        className="outline-2 outline outline-secondary rounded-radius text-secondary hover:bg-secondary 
-                hover:text-background dark:hover:text-foreground p-2 ml-6"
-      >
+        >
         Projects
       </Link>
+        </button>
     </div>
   );
 }

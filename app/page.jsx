@@ -14,12 +14,12 @@ import Image from "next/image";
 function Home() {
   return (
     <>
-      <section id="home" className="pt-10 md:h-full lg:min-h-[81vh]">
-        <div className="flex justify-evenly flex-col-reverse lg:flex-row items-center font-mono">
-          <div className="flex-col mt-4 p-4 max-w-sm md:max-w-lg lg:w-1/2">
+      <section id="home" className="py-20 min-h-screen max-w-screen-2xl m-auto">
+        <div className="flex justify-evenly flex-col-reverse lg:flex-row items-center">
+          <div className="grid gap-4 mt-4 p-4 max-w-sm md:max-w-lg lg:w-1/2">
             <h1 className="text-5xl py-3">Heyy! There, 🫰</h1>
             <h4
-              className="tw text-2xl py-2 font-semibold font-Noto"
+              className="tw text-3xl py-2 font-semibold font-mono"
               id="animate-text"
             >
               I
@@ -57,7 +57,7 @@ function Home() {
                 />
               </span>
             </h4>
-            <p className="text-base py-3 font-Rale font-medium">
+            <p className="text-xl py-3 font-rale">
               I`m an aspiring Full-Stack developer based in India. I am excited
               about making Saas and Open Source Projects.
             </p>

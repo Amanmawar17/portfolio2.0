@@ -3,7 +3,7 @@ import contact from "../assets/contact.svg";
 import Image from "next/image.js";
 function Contact() {
   return (
-    <section className="flex flex-col justify-center items-center py-8 min-h-[82vh] ">
+    <section className="flex flex-col justify-center items-center py-8 min-h-screen max-w-screen-2xl m-auto ">
       <h1 className="font-Rale text-3xl lg:text-5xl text-primary font-semibold">
         Get In Touch
       </h1>

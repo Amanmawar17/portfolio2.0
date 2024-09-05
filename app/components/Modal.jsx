@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useContext } from "react";
 import PropTypes from "prop-types";
@@ -23,49 +23,43 @@ export default function Modal() {
       <div
         className={`w-full bg-white rounded-t-lg shadow-lg transition-all transform ${
           isOpen ? "translate-y-0" : "translate-y-full"
-        } transition-transform duration-300 rounded-t-2xl md:max-w-2xl lg:max-w-5xl bg-accentwhite`}
-        style={{ height: "88%" }}
+        } transition-transform duration-300 rounded-t-2xl w-4/5 max-w-screen-2xl bg-accentwhite overflow-y-auto`}
+        style={{ height: "80%" }}
       >
-        <div className="grid px-4 pt-6">
+        <div className="grid px-8 pt-6">
           <IoCloseOutline
-            className="text-black hover:text-accentblack w-10 h-10 cursor-pointer place-self-end"
+            className="text-black w-10 h-10 cursor-pointer place-self-end"
             onClick={closeModal}
           />
-          <div className="pt-4 grid grid-flow-row lg:grid-flow-col gap-2 lg:gap-10 dark:text-black p-4 max-sm:overflow-y-auto max-sm:max-h-[80vh]">
-            <div className="max-w-lg">
-              <Image src={data.img} alt={data.title} className="shadow-xl" />
-              <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mt-4 lg:my-6 max-w-md">
-                <h2 className="text-start text-2xl mb-4 lg:mb-0 lg:text-3xl font-semibold">{data.title}</h2>
-                <ul className="flex justify-end items-center">
-                  <li>
-                    <a href={data.github} target="_blank" rel="noreferrer">
-                      <FaGithub className="text-black h-6 w-6 mr-3 lg:mx-3" />
-                    </a>
-                  </li>
-                  <li className="">
-                    <a href={data.live} target="_blank" rel="noreferrer">
-                      <BsGlobe className="text-black h-6 w-6" />
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              {data.tech && <p className="mt-2">{data.tech}</p> }
+          <div className="pt-4 flex flex-col justify-center items-center dark:text-black gap-5 py-6">
+            <Image src={data.img} alt={data.title} className="shadow-xl" />
+            <div className="flex justify-start items-center gap-4 w-full">
+              <h2 className="text-start text-4xl mb-4 lg:mb-0 lg:text-3xl font-semibold">
+                {data.title}
+              </h2>
+              <a href={data.github} target="_blank" rel="noreferrer">
+                <FaGithub className="text-black h-6 w-6 mr-3 lg:mx-3" />
+              </a>
+              <a href={data.live} target="_blank" rel="noreferrer">
+                <BsGlobe className="text-black h-6 w-6" />
+              </a>
             </div>
-            <div className="lg:overflow-y-auto lg:max-h-[74vh]">
-              <ul>
-              {Array.isArray(data.desc) ? (
+            <div className="w-full flex justify-start">
+              {data.tech && (
+                <p className="mt-2 text-xl font-mono">{data.tech}</p>
+              )}
+            </div>
+          </div>
+          <div className="text-black grid gap-3 pb-10">
+            {Array.isArray(data.desc) ? (
               data.desc.map((line, index) => (
-                <p key={index} className="mt-2">
+                <p key={index} className="text-base font-noto">
                   {line}
                 </p>
               ))
             ) : (
-              <p className="mt-2">
-                {data.desc}
-              </p>
+              <p className="mt-2">{data.desc}</p>
             )}
-        </ul>
-            </div>
           </div>
         </div>
       </div>

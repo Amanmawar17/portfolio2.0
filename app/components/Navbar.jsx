@@ -18,9 +18,9 @@ function Navbar() {
 
   return (
     <>
-      <nav className="flex justify-center max-lg:p-4 max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-7xl m-auto backdrop-blur-lg backdrop-filter bg-opacity-30 sticky top-0 z-10">
+      <nav className="flex justify-center p-3 max-w-screen-2xl m-auto backdrop-blur-lg backdrop-filter bg-opacity-30 sticky top-0 z-10">
         <div className="rounded-xl flex flex-col lg:flex-row justify-between items-center relative w-full">
-          <div className="flex justify-between lg:justify-start w-full">
+          <div className="flex justify-between lg:justify-start w-full px-2">
               <Link href="/">
             <div className="flex items-baseline">
               <h1 className="font-semibold font-Noto text-lg md:text-2xl lg:text-3xl">
@@ -48,7 +48,7 @@ function Navbar() {
             </div>
           </div>
           <div
-            className={`flex flex-col lg:flex-row justify-center lg:justify-end md:text-lg text-sm items-center font-normal my-1 ${
+            className={`flex flex-col lg:flex-row justify-center lg:justify-end md:text-lg text-sm items-center font-normal my-1 gap-2 px-2 ${
               isOpen
                 ? "py-4 absolute top-10 h-[92vh] w-screen bg-background opacity-85 z-40"
                 : "hidden lg:flex"
@@ -59,7 +59,7 @@ function Navbar() {
                 key={index}
                 id={item.id}
                 href={`/${item.pathname}`}
-                className={`p-4 max-lg:text-3xl max-lg:font-medium hover:text-primary hover:border-b-primary hover:border-b-2 
+                className={`p-4 lg:text-xl lg:font-medium font-noto hover:text-primary hover:border-b-primary hover:border-b-2 
                   ${
                     isActive(`/${item.pathname}`)
                       ? "text-primary border-b-2 border-b-primary"

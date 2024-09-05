@@ -17,6 +17,10 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        rale: ['var(--font-raleway)', 'sans-serif'],
+        noto: ['var(--font-noto)', 'sans-serif'],
+      },
       colors: {
         extra1: "hsl(var(--extra-1))",
         extra2: "hsl(var(--extra-2))",
