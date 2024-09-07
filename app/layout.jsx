@@ -1,3 +1,4 @@
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { ThemeProvider } from "../app/components/Theme-Provider";
 
 import { Raleway, Noto_Sans } from "next/font/google";
@@ -32,6 +33,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
+    <SpeedInsights/>
     <html lang="en" suppressHydrationWarning>
       <head>
         <meta charSet="UTF-8" />
