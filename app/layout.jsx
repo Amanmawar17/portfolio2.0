@@ -33,7 +33,6 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <SpeedInsights/>
     <html lang="en" suppressHydrationWarning>
       <head>
         <meta charSet="UTF-8" />
@@ -58,7 +57,7 @@ export default function RootLayout({ children }) {
         <meta
           property="og:image"
           content="https://aman-mawar.vercel.app/banner.png"
-        />
+          />
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://aman-mawar.vercel.app" />
         <meta property="twitter:title" content="Aman Mawar" />
@@ -73,6 +72,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/logo.png" />
       </head>
       <body className={`${noto.variable} ${raleway.variable}`}>
+        <SpeedInsights/>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
