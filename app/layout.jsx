@@ -75,18 +75,11 @@ export default function RootLayout({ children }) {
       <body className={`${noto.variable} ${raleway.variable}`}>
         <Analytics />
         <SpeedInsights />
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
           <Suspense fallback={<Loading />}>
             <Navbar />
             {children}
             <Footer />
           </Suspense>
-        </ThemeProvider>
       </body>
     </html>
   );

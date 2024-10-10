@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useState } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
-import DarkMode from "./DarkMode";
 
 import { navdata } from "../data/data";
 import { HiOutlineMenuAlt1 } from "react-icons/hi";
@@ -69,9 +68,6 @@ function Navbar() {
                 {item.links}
               </Link>
             ))}
-            <div className="mt-2 lg:mt-0">
-              <DarkMode />
-            </div>
           </div>
         </div>
       </nav>

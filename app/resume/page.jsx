@@ -37,7 +37,7 @@ function Resume() {
           <h1 className="text-5xl text-primary font-semibold">Resume</h1>
           <button className="inline absolute right-3 rounded-sm bg-secondary text-background dark:text-foreground font-medium hover:brightness-90 p-2 cursor-pointer">
             <Link
-              href="https://docs.google.com/document/d/19b76mAOppzK_GLcWnAJB3YzLU08pfXdbcGCnOmb5Iz8/edit?usp=sharing"
+              href="https://drive.google.com/file/d/1M1PfgWaZrA0KcJaqmhOzK_UcgfZ7-73M/view?usp=sharing"
               target="blank"
             >
               Download CV
